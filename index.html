@@ -73,13 +73,18 @@
                 <p class="contact-icon"><i class="fa fa-star"></i></p>
             </div>
             <div class="contact-item form">
-                <input type="text" placeholder="Full name" class="input">
-                <input type="email" placeholder="Email address" class="input">
-                <input type="phone" placeholder="Phone number" class="input">
-                <textarea placeholder="Message" class="input"></textarea>
+                <input type="text" id='name' placeholder="Full name" class="input">
+                <input type="email" id='email' placeholder="Email address" class="input">
+                <input type="phone" id='phone_number' placeholder="Phone number" class="input">
+                <textarea id='message' placeholder="Message" class="input"></textarea>
             </div>
-            <button class="contact-button">Send</button>
+            <div class="contact-item submit">
+                <button id="form-button" class="contact-button">Send</button>
+            </div>
         </section>
+        <center><div id="wrong" class="wrong-message">
+            <p id="print-message"></p>
+        </div></center>
         <section class="info">
             <div class="info-item">
                 <h1 class="info-title">LOCATION</h1>
@@ -102,5 +107,7 @@
         <section class="footer">
             <p class="footer-text">Copyright © Your Website 2022</p>
         </section>
+
+        <script src="scripts/script.js"></script>
     </body>
 </html>

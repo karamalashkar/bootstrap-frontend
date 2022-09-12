@@ -216,7 +216,7 @@ ul li:hover{
     border-bottom: 1px solid lightgrey;
     padding: 30px 240px;
     font-size: 25px;
-    color: #6c757d
+    color: #6c757d 
 }
 
 .input:focus{
@@ -227,17 +227,34 @@ ul li:hover{
 ::placeholder{
     color: #6c757d;
     font-size: 25px;
-    text-align: start;
 }
 
 .contact-button{
-    margin: 2% 0 5% 0;
+    margin: 10% 0 10% 0;
     padding: 20px 30px;
     color: white;
     font-size: 25px;
     background-color: #1abc9c;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrong-message{
+    display: none;
+    width: 50%;
+    height: auto;
+    background-color: red;
+    margin-top: 3%;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.wrong-message p{
+    padding: 2% 0;
 }
 
 .info{
@@ -246,6 +263,7 @@ ul li:hover{
     background-color: #2c3e50;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .info-item{
@@ -348,7 +366,6 @@ a{
     .info-text{
         padding-top: 2%;
     }
-
 
     .input{
         padding: 30px 80px;
