@@ -128,6 +128,55 @@ ul li:hover{
 }
 
 .pictures-item{
-    padding: 2% 1% 5% 1%;
+    padding: 2% 1% 6% 1%;
     width: 28%;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    background-color: #1abc9c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title{
+    padding-top: 50%;
+    font-size: 50px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.about-icon{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 7%;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.about-text{
+    width: 29%;
+    padding: 0 1%;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+.about-button{
+    margin-top: 18%;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30%;
 }
