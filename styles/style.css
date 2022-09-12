@@ -180,3 +180,61 @@ ul li:hover{
     font-size: 20px;
     margin-bottom: 30%;
 }
+
+.contact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title{
+    padding-top: 25%;
+    font-size: 50px;
+    color: #2c3e50;
+    font-family: sans-serif;       
+}
+
+.contact-icon{
+    text-align: center;
+    font-size: 40px;
+    color: #2c3e50;
+    padding-top: 7%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    margin-top: 10%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    padding: 30px 240px;
+    font-size: 25px;
+    color: #6c757d
+}
+
+.input:focus{
+    border: none;
+    border-bottom: 1px solid lightgrey;
+}
+
+::placeholder{
+    color: #6c757d;
+    font-size: 25px;
+    text-align: start;
+}
+
+.contact-button{
+    margin: 2% 0 5% 0;
+    padding: 20px 30px;
+    color: white;
+    font-size: 25px;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 10px;
+}
