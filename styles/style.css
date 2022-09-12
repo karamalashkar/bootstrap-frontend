@@ -287,3 +287,17 @@ ul li:hover{
 a{
     color: #1abc9c;
 }
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #1a252f;
+    text-align: center;
+}
+
+.footer-text{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 2%;
+}
