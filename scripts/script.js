@@ -54,6 +54,24 @@ button_form.addEventListener('click', ()=> {
             wrong.style.display='block';
             wrong_message+='Length of message less than 100 \n ';
         }
+        console.log('hi');
+        print.innerText=wrong_message;
 
-        print.innerText=wrong_message;          
-})
+    })
+
+            //insert data to the database
+            form.addEventListener('submit' , e => {
+            e.preventDefault();
+            const data=new URLSearchParams();
+            for (const p of new FormData(form)){ //append our information into data 
+                data.append(p[0],p[1],p[2],p[3]);
+            }
+
+            //fetch the api used to inset data to database
+            fetch('http://localhost/bootstrap-frontend/add.php' , {
+                method: 'POST',  //define the method as POST
+                body: data    //put data in the body
+            }).then(response => response.text()).then(response => {
+                console.log(response);
+            }).catch(error => console.log(error));
+            });

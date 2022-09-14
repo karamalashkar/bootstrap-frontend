@@ -5,6 +5,7 @@ header("Access-Control-Allow-Headers:*");
 
 include("connection.php");
 
+//query to retrieve data from database
 $query=$mysqli->prepare('select message from messages');
 $query->execute();
 $array=$query->get_result();
